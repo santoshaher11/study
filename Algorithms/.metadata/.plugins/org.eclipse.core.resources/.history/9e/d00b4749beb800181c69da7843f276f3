@@ -1,0 +1,46 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Student2 implements Comparable{
+int rollNo;
+int marks;
+
+public Student2(int rollno, int marks)
+{
+		this.rollNo = rollno;
+		this.marks = marks;
+}
+
+@Override
+public int compareTo(Object arg0) {
+	return this.marks>((Student)arg0).marks? 1:-1;
+}
+	
+public String toString()
+{
+	return this.rollNo+" "+this.marks;
+}
+	public static void main(String[] args) {
+		
+		Student2 s1=new Student2(1, 200);
+		Student2 s2=new Student2(2, 900);
+		Student2 s3=new Student2(3, 300);
+		Student2 s4=new Student2(4, 100);
+		
+		List<Student2> students=new ArrayList<>();
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		students.add(new Student2(6,400));
+
+		Collections.sort(students);
+		
+		for (Student2 student : students) {
+			System.out.println(student);
+		}
+	}
+}

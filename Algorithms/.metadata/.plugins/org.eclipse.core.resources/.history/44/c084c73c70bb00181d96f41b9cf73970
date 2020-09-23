@@ -1,0 +1,75 @@
+class Node
+{
+Node next;
+int data;
+
+Node(int data)
+{
+	this.data=data;
+	this.next=null;
+}
+}
+
+public class LinkedList {
+
+	public static void printList(Node head)
+	{
+		System.out.println("Current list is : ");
+		while(head!=null)
+		{
+			
+			System.out.print(" "+ head.data);
+			head=head.next;
+		}
+		
+	}
+	
+	public static Node boolean deleteNode(int data, Node head)
+	{
+		System.out.println("\nTrying to delete "+data);
+		Node current, prev;
+		current=head;
+		prev=null;
+		
+		if(current.data==data)
+		{
+			System.out.println("Node to be deleted is a start node after deleting this node list will be empty.");
+			return current.next;
+		}
+		while(current!=null)
+		{
+			
+			if(current.data==data)
+			{
+				prev.next=current.next;
+				return head;
+			}
+			
+			prev=current;
+			current=current.next;
+		}
+			return false;
+		
+	}
+	
+	public static void main(String[] args) {
+		Node head=null;
+		head=new Node(1);
+		head.next= new Node(2);
+		head.next.next= new Node(3);
+		head.next.next.next=new Node(4);
+		head.next.next.next.next=new Node(5);
+		head.next.next.next.next.next=new Node(6);
+		
+		printList(head);
+		
+		deleteNode(3, head);
+		printList(head);
+		deleteNode(4, head);
+		printList(head);
+		deleteNode(1, head);
+		printList(head);
+		
+	}
+
+}

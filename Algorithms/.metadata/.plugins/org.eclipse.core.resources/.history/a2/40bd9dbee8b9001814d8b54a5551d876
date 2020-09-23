@@ -1,0 +1,19 @@
+package com.java8.features;
+
+@FunctionalInterface
+public interface FunctionaInterFace {
+
+	public void sampleMethod();
+	
+	default public void sampleDefaultMethod()
+	{
+		
+		System.out.println("Default sample method called from interface itself");
+	}
+	
+	private void samplePrivateMethod()
+	{
+		System.out.println("This is private method from interface");
+	}
+
+}

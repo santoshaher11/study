@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;BinaryTree.java&apos; to &apos;BinaryTree/src/com.santosh.algo&apos;&#x0D;&#x0A;- Original project: &apos;Servers&apos;&#x0D;&#x0A;- Destination element: &apos;BinaryTree/src/com.santosh.algo&apos;&#x0D;&#x0A;- Original element: &apos;BinaryTree.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=BinaryTree/src&lt;com.santosh.algo" element1="BinaryTree.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1536400724583" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorMain {
+
+	public static void main(String[] args) {
+		Thread t1= new Thread(new TaskRunnable());
+		//t1.start();
+		ExecutorService pool= Executors.newFixedThreadPool(2);
+		pool.execute(t1);
+		
+		pool.shutdown();
+
+	}
+
+}

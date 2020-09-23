@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/BreadthFirstTraversal/BreadthFirstTraversal.iml" filepath="$PROJECT_DIR$/../../Algorithms/BreadthFirstTraversal/BreadthFirstTraversal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/CollectionSample/CollectionSample.iml" filepath="$PROJECT_DIR$/../../Algorithms/CollectionSample/CollectionSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/CollectionsVector/CollectionsVector.iml" filepath="$PROJECT_DIR$/../../Algorithms/CollectionsVector/CollectionsVector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/CorrectSwappedTwoNodesInBST/CorrectSwappedTwoNodesInBST.iml" filepath="$PROJECT_DIR$/../../Algorithms/CorrectSwappedTwoNodesInBST/CorrectSwappedTwoNodesInBST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/DepthFirstTraversal/DepthFirstTraversal.iml" filepath="$PROJECT_DIR$/../../Algorithms/DepthFirstTraversal/DepthFirstTraversal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/GenericsExamples/GenericsExamples.iml" filepath="$PROJECT_DIR$/../../Algorithms/GenericsExamples/GenericsExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/InputReader/InputReader.iml" filepath="$PROJECT_DIR$/../../Algorithms/InputReader/InputReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/Java8Features/Java8Features.iml" filepath="$PROJECT_DIR$/../../Algorithms/Java8Features/Java8Features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/LCA/LCA.iml" filepath="$PROJECT_DIR$/../../Algorithms/LCA/LCA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/LevelOrderTraversalInSpiralForm/LevelOrderTraversalInSpiralForm.iml" filepath="$PROJECT_DIR$/../../Algorithms/LevelOrderTraversalInSpiralForm/LevelOrderTraversalInSpiralForm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/../../Algorithms/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/MapSample/MapSample.iml" filepath="$PROJECT_DIR$/../../Algorithms/MapSample/MapSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/MinimumDepth/MinimumDepth.iml" filepath="$PROJECT_DIR$/../../Algorithms/MinimumDepth/MinimumDepth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/ReturnKthLargestElementFromBST/ReturnKthLargestElementFromBST.iml" filepath="$PROJECT_DIR$/../../Algorithms/ReturnKthLargestElementFromBST/ReturnKthLargestElementFromBST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/SortedArrayToBalancedBST/SortedArrayToBalancedBST.iml" filepath="$PROJECT_DIR$/../../Algorithms/SortedArrayToBalancedBST/SortedArrayToBalancedBST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/SortingByComparatorInterface/SortingByComparatorInterface.iml" filepath="$PROJECT_DIR$/../../Algorithms/SortingByComparatorInterface/SortingByComparatorInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Algorithms/SymmetricTreeSelfMirrorImage/SymmetricTreeSelfMirrorImage.iml" filepath="$PROJECT_DIR$/../../Algorithms/SymmetricTreeSelfMirrorImage/SymmetricTreeSelfMirrorImage.iml" />
+    </modules>
+  </component>
+</project>

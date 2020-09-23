@@ -1,0 +1,63 @@
+class Node
+{
+Node next;
+int data;
+
+Node(int data)
+{
+	this.data=data;
+	this.next=null;
+}
+}
+
+public class LinkedList {
+
+	public static void printList(Node head)
+	{
+		System.out.println("Current list is : ");
+		while(head!=null)
+		{
+			
+			System.out.print(" "+ head.data);
+			head=head.next;
+		}
+		
+	}
+	
+	public static boolean deleteNode(int data, Node node)
+	{
+		Node current, prev;
+		current=node;
+		prev=null;
+		while(current!=null)
+		{
+			
+			if(current.data==data)
+			{
+				prev.next=current.next;
+				return true;
+			}
+			
+			prev=current;
+			current=current.next;
+		}
+			return false;
+		
+	}
+	
+	public static void main(String[] args) {
+		Node head=null;
+		head=new Node(1);
+		head.next= new Node(2);
+		head.next.next= new Node(3);
+		head.next.next.next=new Node(4);
+		head.next.next.next.next=new Node(5);
+		head.next.next.next.next.next=new Node(6);
+		
+		printList(head);
+		
+		
+
+	}
+
+}

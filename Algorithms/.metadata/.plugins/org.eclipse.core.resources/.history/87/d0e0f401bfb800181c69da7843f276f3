@@ -1,0 +1,49 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Student3 {
+int rollNo;
+int marks;
+
+public Student3(int rollno, int marks)
+{
+		this.rollNo = rollno;
+		this.marks = marks;
+}
+	
+public String toString()
+{
+	return this.rollNo+" "+this.marks;
+}
+	public static void main(String[] args) {
+		
+		Student3 s1=new Student3(1, 200);
+		Student3 s2=new Student3(2, 900);
+		Student3 s3=new Student3(3, 300);
+		Student3 s4=new Student3(4, 100);
+		
+		List<Student3> students=new ArrayList<>();
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		students.add(new Student3(6,400));
+
+		Collections.sort(students,new Comparator<Student3>() {
+
+		@Override
+		public int compare(Student3 o1, Student3 o2) {
+			Student3 s1=(Student3) o1;
+			Student3 s2=(Student3) o2;
+			return s1.marks>s2.marks? 1:-1;
+			}
+		});
+
+		for (Student3 student : students) {
+			System.out.println(student);
+		}
+	}
+}

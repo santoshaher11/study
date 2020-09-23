@@ -1,0 +1,49 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Student implements Comparator {
+int rollNo;
+int marks;
+
+public Student(int rollno, int marks)
+{
+		this.rollNo = rollno;
+		this.marks = marks;
+}
+
+public Student()
+{
+	}
+
+@Override
+public int compare(Object arg0, Object arg1) {
+	Student s1=(Student) arg0;
+	Student s2=(Student) arg1;
+	if(s1.marks>s2.marks)return 1; else return -1;
+	
+}
+	
+	public static void main(String[] args) {
+		
+		Student s1=new Student(1, 200);
+		Student s2=new Student(2, 900);
+		Student s3=new Student(3, 300);
+		Student s4=new Student(4, 100);
+		
+		List<Student> students=new ArrayList<>();
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		students.add(new Student(6,400));
+		Comparator com=new Student();
+		Collections.sort(students,com);
+	}
+
+
+
+
+}

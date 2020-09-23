@@ -1,0 +1,37 @@
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.List;
+
+class Student
+{
+	static List<Student> studentsList=new LinkedList<>(); 
+	
+	int rollNo;
+	String Name;
+	
+	public void addStudent(int rollNo, String Name)
+	{
+		Student temp =new Student();
+		temp.Name=Name;
+		temp.rollNo=rollNo;
+		studentsList.add(temp);
+		
+	}
+	
+	public String toString()
+	{
+		
+		return "Name : "+this.Name+ " RollNo : "+this.rollNo;
+	}
+	
+}
+
+public class LambdaExpression {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

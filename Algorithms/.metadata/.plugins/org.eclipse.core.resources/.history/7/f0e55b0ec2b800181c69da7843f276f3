@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class StudentComparatorLambda {
+int rollNo;
+int marks;
+
+public StudentComparatorLambda(int rollno, int marks)
+{
+		this.rollNo = rollno;
+		this.marks = marks;
+}
+	
+public String toString()
+{
+	return this.rollNo+" "+this.marks;
+}
+	public static void main(String[] args) {
+		
+		StudentComparatorLambda s1=new StudentComparatorLambda(1, 200);
+		StudentComparatorLambda s2=new StudentComparatorLambda(2, 900);
+		StudentComparatorLambda s3=new StudentComparatorLambda(3, 300);
+		StudentComparatorLambda s4=new StudentComparatorLambda(4, 100);
+		
+		List<StudentComparatorLambda> students=new ArrayList<>();
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		students.add(new StudentComparatorLambda(6,400));
+
+		Collections.sort(students,(o1,o2)->{
+			return o1.marks>o2.marks? 1:-1;
+		});
+
+		for (StudentComparatorLambda student : students) {
+			System.out.println(student);
+		}
+	}
+}

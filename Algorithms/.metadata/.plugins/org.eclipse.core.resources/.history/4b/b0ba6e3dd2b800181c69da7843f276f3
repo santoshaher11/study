@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+class Node
+{
+	int data;
+	
+	public Node(int data)
+	{
+	this.data=data;	
+	}
+}
+
+public class MapSample {
+
+
+	public static void main(String[] args) {
+
+		Map<String,Node>mapCollection=new HashMap<>();
+		mapCollection.put("A", new Node(10));
+		mapCollection.put("B", new Node(100));
+		mapCollection.put("C", new Node(20));
+		mapCollection.put("D", new Node(30));
+		
+		Set<String> keys=mapCollection.keySet();
+		for (String key : keys) {
+			System.out.println("Value "+mapCollection.get(key).data);
+		}
+		
+	}
+
+}

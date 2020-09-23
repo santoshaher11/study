@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+public class MapSample {
+
+	Class Node
+	{
+		int data;
+		
+		public Node(int data)
+		{
+		this.dat	
+		}
+	}
+	public static void main(String[] args) {
+
+		Map<String,Integer>mapCollection=new HashMap<>();
+		
+
+	}
+
+}

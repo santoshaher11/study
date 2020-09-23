@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class LambdaExpression {
+	
+	public static void main(String[] args) {
+	Student.addStudent(1, "A");
+	Student.addStudent(2, "B");
+	Student.addStudent(3, "C");
+	Student.addStudent(4, "D");
+	Student.addStudent(5, "E");
+	
+	System.out.println("Interface style");
+	Student.studentsList.forEach(new Consumer<Student>() {
+		@Override
+		public void accept(Student arg0) {
+		System.out.println(arg0);
+		}});
+	
+	System.out.println("Lamda style");
+	Student.studentsList.forEach((s)->System.out.println(s));
+	
+	System.out.println("Method refrence style");
+	Student.studentsList.forEach(System.out::println);
+	
+	}
+}

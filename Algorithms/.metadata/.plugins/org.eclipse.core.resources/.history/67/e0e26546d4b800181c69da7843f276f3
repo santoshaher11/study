@@ -1,0 +1,90 @@
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+class Node
+{
+	int data;
+	
+	public Node(int data)
+	{
+	this.data=data;	
+	}
+}
+
+public class MapSample {
+
+
+	public static void main(String[] args) {
+		System.out.println("************  HashMap  ************");
+		/**
+		 * HashMap Example
+		 */
+		Map<String,Node>mapCollection=new HashMap<>();
+		mapCollection.put("Z", new Node(10));
+		mapCollection.put("A", new Node(100));
+		mapCollection.put("S", new Node(20));
+		mapCollection.put("K", new Node(30));
+		mapCollection.put("B", new Node(50));
+		
+		Set<String> keys=mapCollection.keySet();
+		for (String key : keys) {
+			System.out.println("Value "+mapCollection.get(key).data);
+		}
+	
+		System.out.println("************  HashTable  ************");
+		/**
+		 * HashTable Example
+		 */
+		Map<String,Node>hashtable=new Hashtable<>();
+		hashtable.put("Z", new Node(10));
+		hashtable.put("A", new Node(100));
+		hashtable.put("S", new Node(20));
+		hashtable.put("K", new Node(30));
+		hashtable.put("B", new Node(50));
+		Set<String> Hkeys=hashtable.keySet();
+		for (String key : Hkeys) {
+			System.out.println("Value "+hashtable.get(key).data);
+		}
+		
+		System.out.println("************  TreeMap  ************");
+		/**
+		 * HashTable Example
+		 */
+		Map<String,Node>treemap=new TreeMap<>();
+		treemap.put("Z", new Node(10));
+		treemap.put("A", new Node(100));
+		treemap.put("S", new Node(20));
+		treemap.put("K", new Node(30));
+		treemap.put("B", new Node(50));
+		Set<String> tkeys=treemap.keySet();
+		for (String key : tkeys) {
+			System.out.println("Value "+treemap.get(key).data);
+		}
+		
+		System.out.println("************  LinkedMap  ************");
+		/**
+		 * Linked Hash Map Example
+		 */
+		Map<String,Node>linkedMap=new LinkedHashMap<>();
+		linkedMap.put("Z", new Node(10));
+		linkedMap.put("A", new Node(100));
+		linkedMap.put("S", new Node(20));
+		linkedMap.put("B", new Node(50));
+		linkedMap.put("K", new Node(30));
+		
+		Set<String> lKeys=linkedMap.keySet();
+		for (String key : lKeys) {
+			System.out.println("Value "+linkedMap.get(key).data);
+		}
+		
+		Set<Entry<String,Node>> LEntries=linkedMap.entrySet();
+		for (Entry<String,Node> entry : LEntries) {
+			System.out.println("Key : "+entry.getKey()+" Value "+entry.getValue().data);
+		}
+		
+	}
+}

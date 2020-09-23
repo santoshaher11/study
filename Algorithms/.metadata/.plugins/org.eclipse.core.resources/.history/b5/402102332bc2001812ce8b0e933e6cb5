@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Sample {
+
+	
+	public static void main (String args[])
+	{
+		Collection<Integer> group =new ArrayList<>();
+		
+		group.add(1);
+		group.add(2);
+
+		group.add(3);
+		group.add(4);
+
+		group.add(5);
+		group.add(6);
+		
+		//Collections.sort(group);//This is not allowed
+		
+		
+	List<Integer> list =new ArrayList<>();
+		
+		list.add(1);
+		list.add(2);
+		list.add(100);
+		list.add(5);
+		list.add(3,10);
+		Collections.sort(list);
+		
+		for (Integer integer : list) {
+			System.out.println(integer);
+		}
+	}
+}
